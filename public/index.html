@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecos Salud | Clínica dental y estética en Santiago · Evaluación gratis</title>
+  <meta name="description" content="Clínica dental y estética en Moneda 812, Santiago. Ortodoncia, implantes, endodoncia, diseño de sonrisa y tratamientos estéticos. Agenda tu evaluación gratis por WhatsApp.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#209DE7">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ecos Salud | Clínica dental y estética en Santiago · Evaluación gratis">
+  <meta property="og:description" content="Clínica dental y estética en Moneda 812, Santiago. Ortodoncia, implantes, endodoncia, diseño de sonrisa y tratamientos estéticos. Agenda tu evaluación gratis por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:image" content="https://ecossalud.cl/wp-content/uploads/2025/05/20240611_085343-scaled-1.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="https://ecossalud.cl/wp-content/uploads/2025/05/ecossalud-favicon-150x150.webp">
+
+  <!-- Google Fonts: Rubik & Quicksand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#209DE7',
+            secondary: '#61CD29',
+            surface: '#F1F1F1',
+            ink: '#353535',
+          },
+          fontFamily: {
+            rubik: ['Rubik', 'sans-serif'],
+            quicksand: ['Quicksand', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Base typography and body */
+    body {
+      font-family: 'Quicksand', sans-serif;
+      color: #353535;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    h1, h2, h3, h4, .font-rubik {
+      font-family: 'Rubik', sans-serif;
+    }
+
+    /* Focus visible */
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 3px solid #209DE7;
+      outline-offset: 2px;
+    }
+
+    /* Green button brightness hover without changing colors */
+    .btn-secondary:hover {
+      filter: brightness(0.95);
+    }
+
+    /* Hero H1 word-by-word animation */
+    .hero-word {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 500ms ease-out, transform 500ms ease-out;
+    }
+    .hero-word.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Eco pulse waves from button center */
+    @keyframes ecoWave {
+      0% {
+        transform: scale(0.6);
+        opacity: 0.35;
+      }
+      100% {
+        transform: scale(2.4);
+        opacity: 0;
+      }
+    }
+
+    .eco-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 140px;
+      height: 140px;
+      margin-top: -70px;
+      margin-left: -70px;
+      border-radius: 9999px;
+      border: 1.5px solid rgba(255, 255, 255, 0.4);
+      pointer-events: none;
+      transform-origin: center center;
+    }
+
+    .eco-pulse-active .eco-ring-1 {
+      animation: ecoWave 1.4s ease-out 3;
+      animation-delay: 0ms;
+    }
+    .eco-pulse-active .eco-ring-2 {
+      animation: ecoWave 1.4s ease-out 3;
+      animation-delay: 250ms;
+    }
+    .eco-pulse-active .eco-ring-3 {
+      animation: ecoWave 1.4s ease-out 3;
+      animation-delay: 500ms;
+    }
+
+    .eco-pulse-settled .eco-ring {
+      animation: none;
+      opacity: 0.10;
+      transform: scale(1.6);
+      border-color: #ffffff;
+    }
+
+    /* Microinteraction: Fade in on scroll */
+    .fade-on-scroll {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 300ms ease-out, transform 300ms ease-out;
+    }
+    .fade-on-scroll.has-entered {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Prefers reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      .hero-word {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      .eco-ring {
+        animation: none !important;
+        opacity: 0.10 !important;
+        transform: scale(1.6) !important;
+      }
+      .fade-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="pb-24 selection:bg-primary/20 selection:text-ink">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 h-16 bg-white border-b border-ink/10">
+    <div class="max-w-[1120px] mx-auto h-full px-5 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center shrink-0" aria-label="Ecos Salud - Inicio">
+        <img 
+          src="https://ecossalud.cl/wp-content/uploads/2025/05/ecossalud-logo-seo.webp" 
+          alt="Ecos Salud" 
+          width="180" 
+          height="48" 
+          class="h-[40px] md:h-[48px] w-auto object-contain"
+          onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-rubik font-bold text-[22px] text-primary tracking-tight\'>Ecos Salud</span>';"
+        >
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="Navegación principal">
+        <a href="#tratamientos" class="font-rubik font-medium text-[15px] text-ink hover:text-primary transition-colors">Tratamientos</a>
+        <a href="#equipo" class="font-rubik font-medium text-[15px] text-ink hover:text-primary transition-colors">Equipo</a>
+        <a href="#resenas" class="font-rubik font-medium text-[15px] text-ink hover:text-primary transition-colors">Reseñas</a>
+        <a href="#agenda" class="font-rubik font-medium text-[15px] text-ink hover:text-primary transition-colors">Agenda</a>
+        
+        <a 
+          href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20gratis."
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="btn-secondary inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-secondary text-ink font-rubik font-bold text-[14px] transition duration-150"
+        >
+          Evaluación gratis
+        </a>
+      </nav>
+
+      <!-- Mobile Call Button -->
+      <div class="md:hidden flex items-center">
+        <a 
+          href="tel:+56232862182" 
+          aria-label="Llamar a Ecos Salud al +56 2 3286 2182"
+          class="w-11 h-11 rounded-full bg-primary flex items-center justify-center text-white active:scale-95 transition-transform"
+        >
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section 
+    id="inicio" 
+    class="relative bg-primary min-h-[calc(100svh-64px)] flex items-center overflow-hidden"
+  >
+    <!-- Background Image -->
+    <img 
+      src="https://ecossalud.cl/wp-content/uploads/2025/05/20240611_085343-scaled-1.jpg" 
+      alt="Clínica Ecos Salud en Santiago" 
+      class="absolute inset-0 w-full h-full object-cover" 
+      fetchpriority="high"
+      width="1920" 
+      height="1080"
+    >
+
+    <!-- Overlay primary al 88% -->
+    <div class="absolute inset-0 bg-primary/88"></div>
+
+    <!-- Eco waves decorative svg in hero background -->
+    <svg class="absolute -right-24 -bottom-24 w-[500px] h-[500px] pointer-events-none opacity-20 hidden lg:block" viewBox="0 0 500 500" fill="none" aria-hidden="true">
+      <circle cx="250" cy="250" r="100" stroke="#ffffff" stroke-width="1.5" />
+      <circle cx="250" cy="250" r="170" stroke="#ffffff" stroke-width="1.5" />
+      <circle cx="250" cy="250" r="240" stroke="#ffffff" stroke-width="1.5" />
+    </svg>
+
+    <!-- Content Container -->
+    <div class="relative z-10 max-w-[1120px] mx-auto w-full px-5 py-8 md:py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      
+      <!-- Left Column (Order & content strictly matching 390x844px instant mobile priority) -->
+      <div class="lg:col-span-7 flex flex-col items-start text-left text-white">
+        
+        <!-- 1. Calificación Google chip -->
+        <div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-white/40 bg-white/10 backdrop-blur-sm mb-4">
+          <div class="flex items-center gap-0.5 text-white" aria-hidden="true">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <span class="font-rubik font-medium text-xs tracking-wide">4,9 en Google · 165 reseñas</span>
+        </div>
+
+        <!-- Etiqueta -->
+        <span class="font-rubik font-medium text-[13px] tracking-[0.08em] uppercase text-white/90 mb-2">
+          CLÍNICA DENTAL Y ESTÉTICA · SANTIAGO
+        </span>
+
+        <!-- 2. H1 con animación palabra por palabra -->
+        <h1 
+          id="hero-title" 
+          class="font-rubik font-extrabold text-[40px] sm:text-[56px] lg:text-[72px] leading-[1.05] tracking-[-0.02em] text-white mb-3"
+          aria-label="Agenda tu evaluación gratis"
+        >
+          <!-- Words inserted by JS for staggered entrance, fallback static for SEO & no-js -->
+          <span class="hero-word">Agenda</span> <span class="hero-word">tu</span> <span class="hero-word">evaluación</span> <span class="hero-word relative inline-block">gratis<span class="hidden lg:block absolute left-0 bottom-1 w-full h-[6px] bg-secondary rounded-full -z-10"></span></span>
+        </h1>
+
+        <!-- 3. Línea dirección -->
+        <p class="font-quicksand font-semibold text-[17px] sm:text-[18px] text-white leading-snug mb-5">
+          Clínica dental y estética en Moneda 812, Oficina 805. Escríbenos por WhatsApp y te damos hora.
+        </p>
+
+        <!-- 4. Botón verde grande con ondas de fondo + CTA secundaria -->
+        <div class="relative w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-4">
+          <!-- Animated Eco Waves behind the button -->
+          <div id="eco-button-waves" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 pointer-events-none">
+            <div class="eco-ring eco-ring-1"></div>
+            <div class="eco-ring eco-ring-2"></div>
+            <div class="eco-ring eco-ring-3"></div>
+          </div>
+
+          <a 
+            href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20gratis."
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="btn-secondary relative z-10 w-full sm:w-auto h-14 px-8 rounded-full bg-secondary text-ink font-rubik font-bold text-base flex items-center justify-center gap-3 shadow-sm transition active:scale-[0.98]"
+          >
+            <!-- WhatsApp SVG Icon inline -->
+            <svg class="w-6 h-6 fill-current shrink-0 text-ink" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>Agendar evaluación gratis</span>
+          </a>
+
+          <!-- Secondary CTA -->
+          <a 
+            href="#tratamientos" 
+            class="text-white underline underline-offset-4 font-rubik font-medium text-sm text-center sm:text-left hover:text-white/80 py-2 sm:py-0"
+          >
+            Ver tratamientos
+          </a>
+        </div>
+
+        <!-- 5. Horario en una línea -->
+        <p class="font-quicksand font-medium text-[13px] sm:text-sm text-white/90">
+          Lun a vie 08:00–20:00 · Sáb 09:00–18:00
+        </p>
+
+      </div>
+
+      <!-- Right Column: Card "Así de simple" (Desktop only) -->
+      <div class="hidden lg:block lg:col-span-5">
+        <div class="w-[360px] ml-auto bg-white rounded-[24px] p-8 text-ink shadow-sm border border-ink/10">
+          <h2 class="font-rubik font-bold text-2xl text-ink mb-6">Así de simple</h2>
+
+          <ol class="space-y-6">
+            <li class="flex items-start gap-4">
+              <span class="font-rubik font-extrabold text-2xl text-primary leading-none shrink-0 w-7">1</span>
+              <div>
+                <p class="font-rubik font-bold text-[15px] text-ink leading-snug">Escríbenos por WhatsApp</p>
+                <p class="font-quicksand text-xs text-ink/70 mt-0.5">Te responderemos de inmediato para orientarte.</p>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-4">
+              <span class="font-rubik font-extrabold text-2xl text-primary leading-none shrink-0 w-7">2</span>
+              <div>
+                <p class="font-rubik font-bold text-[15px] text-ink leading-snug">Te damos hora para tu evaluación gratis</p>
+                <p class="font-quicksand text-xs text-ink/70 mt-0.5">Elige el día y la hora que mejor te acomode.</p>
+              </div>
+            </li>
+
+            <li class="flex items-start gap-4">
+              <span class="font-rubik font-extrabold text-2xl text-primary leading-none shrink-0 w-7">3</span>
+              <div>
+                <p class="font-rubik font-bold text-[15px] text-ink leading-snug">Te explicamos tu tratamiento y formas de pago</p>
+                <p class="font-quicksand text-xs text-ink/70 mt-0.5">Diagnóstico claro y presupuesto sin sorpresas.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="mt-8 pt-5 border-t border-ink/10 text-center">
+            <span class="inline-block font-rubik font-medium text-xs text-ink/80 tracking-wide uppercase">
+              Pago en cuotas · Seguros complementarios
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2. TRATAMIENTOS SECTION (#tratamientos, fondo blanco) -->
+  <section id="tratamientos" class="py-[72px] lg:py-[120px] bg-white text-ink">
+    <div class="max-w-[1120px] mx-auto px-5">
+      
+      <!-- Section Header -->
+      <div class="max-w-2xl mb-10 md:mb-14">
+        <span class="font-rubik font-medium text-[13px] tracking-[0.08em] uppercase text-primary block mb-2">
+          TRATAMIENTOS
+        </span>
+        <h2 class="font-rubik font-bold text-[30px] md:text-[48px] leading-tight text-ink mb-3">
+          Odontología y estética en un solo lugar
+        </h2>
+        <p class="font-quicksand font-medium text-[16px] md:text-[17px] text-ink/85 leading-relaxed">
+          Somos un centro multidisciplinario. Si no sabes qué necesitas, empieza por la evaluación gratis.
+        </p>
+      </div>
+
+      <!-- Main Layout: 2 Columns on Desktop, List on Mobile -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left: Image in 420px circle with eco waves (Desktop only) -->
+        <div class="hidden lg:flex lg:col-span-5 flex-col items-center justify-center sticky top-24 pt-4">
+          <div class="relative w-[420px] h-[420px] flex items-center justify-center">
+            <!-- Eco wave circles behind -->
+            <svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 420 420" fill="none" aria-hidden="true">
+              <circle cx="210" cy="210" r="150" stroke="#209DE7" stroke-width="1.5" stroke-opacity="0.3" />
+              <circle cx="210" cy="210" r="180" stroke="#209DE7" stroke-width="1.5" stroke-opacity="0.2" />
+              <circle cx="210" cy="210" r="208" stroke="#209DE7" stroke-width="1.5" stroke-opacity="0.1" />
+            </svg>
+
+            <!-- Circular Photo with primary background fallback -->
+            <div class="w-[320px] h-[320px] rounded-full overflow-hidden bg-primary shadow-sm border border-ink/10">
+              <img 
+                src="https://ecossalud.cl/wp-content/uploads/2025/05/20240607_093524-scaled-1.jpg" 
+                alt="Box de atención en Ecos Salud" 
+                class="w-full h-full object-cover" 
+                loading="lazy" 
+                decoding="async" 
+                width="420" 
+                height="420"
+                onerror="this.style.opacity='0'"
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Tab selector & lists -->
+        <div class="lg:col-span-7">
+          
+          <!-- Segmented Tab Controls (Pill shape) -->
+          <div 
+            class="inline-flex p-1 rounded-full bg-surface border border-ink/10 mb-8" 
+            role="tablist" 
+            aria-label="Especialidades de Ecos Salud"
+          >
+            <button 
+              id="tab-btn-dental" 
+              role="tab" 
+              aria-selected="true" 
+              aria-controls="tab-panel-dental" 
+              tabindex="0"
+              class="tab-trigger px-6 py-2.5 rounded-full font-rubik font-bold text-sm transition-all duration-200 bg-primary text-white shadow-sm"
+              onclick="switchTreatmentTab('dental')"
+            >
+              Dental
+            </button>
+            <button 
+              id="tab-btn-estetica" 
+              role="tab" 
+              aria-selected="false" 
+              aria-controls="tab-panel-estetica" 
+              tabindex="-1"
+              class="tab-trigger px-6 py-2.5 rounded-full font-rubik font-bold text-sm transition-all duration-200 text-ink hover:text-primary"
+              onclick="switchTreatmentTab('estetica')"
+            >
+              Estética
+            </button>
+          </div>
+
+          <!-- Pestaña 1: Dental -->
+          <div id="tab-panel-dental" role="tabpanel" aria-labelledby="tab-btn-dental" class="block">
+            <div class="divide-y divide-ink/10 border-y border-ink/10">
+              
+              <!-- 1 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <!-- Wave marker SVG (2 concentric rings in primary) -->
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Extracciones dentales y muelas del juicio</h3>
+                    <p class="font-quicksand font-medium text-sm text-ink/70">Retiro de un diente o muela desde la raíz</p>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Extracciones%20dentales%20y%20muelas%20del%20juicio." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 2 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Prótesis removibles</h3>
+                    <p class="font-quicksand font-medium text-sm text-ink/70">Aparato que reemplaza las piezas dentales que faltan</p>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Pr%C3%B3tesis%20removibles." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 3 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Implantes dentales</h3>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Implantes%20dentales." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 4 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Endodoncia</h3>
+                    <p class="font-quicksand font-medium text-sm text-ink/70">Tratamiento de conducto que salva el diente retirando la pulpa infectada</p>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Endodoncia." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 5 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Ortodoncia y brackets</h3>
+                    <p class="font-quicksand font-medium text-sm text-ink/70">Endereza los dientes y corrige la mordida</p>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Ortodoncia%20y%20brackets." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 6 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Gingivectomía</h3>
+                    <p class="font-quicksand font-medium text-sm text-ink/70">Retira el exceso de tejido de las encías</p>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Gingivectom%C3%ADa." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- Extra rows 7 to 12 (collapsible in mobile) -->
+              <div id="extra-dental-rows" class="hidden md:contents">
+                
+                <!-- 7 -->
+                <div class="treatment-row flex items-center justify-between py-4 group">
+                  <div class="flex items-start gap-3.5 pr-4">
+                    <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                      <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                    </svg>
+                    <div>
+                      <h3 class="font-rubik font-bold text-base text-ink leading-snug">Diseño de sonrisa</h3>
+                      <p class="font-quicksand font-medium text-sm text-ink/70">Tratamiento personalizado de forma, color y alineación</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Dise%C3%B1o%20de%20sonrisa." 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  >
+                    Consultar <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+
+                <!-- 8 -->
+                <div class="treatment-row flex items-center justify-between py-4 group">
+                  <div class="flex items-start gap-3.5 pr-4">
+                    <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                      <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                    </svg>
+                    <div>
+                      <h3 class="font-rubik font-bold text-base text-ink leading-snug">Radiografía panorámica</h3>
+                      <p class="font-quicksand font-medium text-sm text-ink/70">Equipos de alta resolución</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Radiograf%C3%ADa%20panor%C3%A1mica." 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  >
+                    Consultar <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+
+                <!-- 9 -->
+                <div class="treatment-row flex items-center justify-between py-4 group">
+                  <div class="flex items-start gap-3.5 pr-4">
+                    <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                      <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                    </svg>
+                    <div>
+                      <h3 class="font-rubik font-bold text-base text-ink leading-snug">Odontopediatría</h3>
+                      <p class="font-quicksand font-medium text-sm text-ink/70">Salud bucal de niños y niñas desde temprana edad</p>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Odontopediatr%C3%ADa." 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  >
+                    Consultar <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+
+                <!-- 10 -->
+                <div class="treatment-row flex items-center justify-between py-4 group">
+                  <div class="flex items-start gap-3.5 pr-4">
+                    <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                      <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                    </svg>
+                    <div>
+                      <h3 class="font-rubik font-bold text-base text-ink leading-snug">Limpieza dental y destartraje</h3>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Limpieza%20dental%20y%20destartraje." 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  >
+                    Consultar <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+
+                <!-- 11 -->
+                <div class="treatment-row flex items-center justify-between py-4 group">
+                  <div class="flex items-start gap-3.5 pr-4">
+                    <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                      <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                    </svg>
+                    <div>
+                      <h3 class="font-rubik font-bold text-base text-ink leading-snug">Blanqueamiento dental</h3>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Blanqueamiento%20dental." 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  >
+                    Consultar <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+
+                <!-- 12 -->
+                <div class="treatment-row flex items-center justify-between py-4 group">
+                  <div class="flex items-start gap-3.5 pr-4">
+                    <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                      <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                    </svg>
+                    <div>
+                      <h3 class="font-rubik font-bold text-base text-ink leading-snug">Urgencias dentales</h3>
+                    </div>
+                  </div>
+                  <a 
+                    href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Urgencias%20dentales." 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  >
+                    Consultar <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Mobile Show All Button -->
+            <div class="mt-6 md:hidden">
+              <button 
+                id="toggle-dental-btn" 
+                type="button" 
+                class="w-full py-3.5 rounded-full border border-ink/20 font-rubik font-bold text-sm text-ink hover:bg-surface transition-colors"
+                onclick="toggleMobileDentalTreatments()"
+              >
+                Ver los 12 tratamientos
+              </button>
+            </div>
+          </div>
+
+          <!-- Pestaña 2: Estética -->
+          <div id="tab-panel-estetica" role="tabpanel" aria-labelledby="tab-btn-estetica" class="hidden">
+            <p class="font-quicksand font-semibold text-sm text-ink/85 mb-4">
+              Tratamientos realizados por profesionales avalados.
+            </p>
+
+            <div class="divide-y divide-ink/10 border-y border-ink/10">
+              
+              <!-- 1 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Toxina botulínica</h3>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Toxina%20botul%C3%ADnica." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 2 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Ácido hialurónico</h3>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20%C3%81cido%20hialur%C3%B3nico." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 3 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Depilación láser</h3>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Depilaci%C3%B3n%20l%C3%A1ser." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 4 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Limpieza facial</h3>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Limpieza%20facial." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 5 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Dermapen</h3>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Dermapen." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <!-- 6 -->
+              <div class="treatment-row flex items-center justify-between py-4 group">
+                <div class="flex items-start gap-3.5 pr-4">
+                  <svg class="w-5 h-5 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="4" stroke="#209DE7" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="8.5" stroke="#209DE7" stroke-width="1.5" />
+                  </svg>
+                  <div>
+                    <h3 class="font-rubik font-bold text-base text-ink leading-snug">Pink Glow</h3>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20consultar%20por%20Pink%20Glow." 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="font-rubik font-bold text-sm text-primary hover:text-primary/80 shrink-0 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  Consultar <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Cierre: Urgencia dental banner -->
+      <div class="mt-14 p-6 sm:p-8 rounded-[24px] bg-surface border border-ink/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="font-rubik font-bold text-xl sm:text-2xl text-ink leading-tight mb-1">
+            ¿Tienes una urgencia dental?
+          </h3>
+          <p class="font-quicksand font-medium text-sm sm:text-base text-ink/75">
+            Te atendemos en el centro de Santiago con horario continuado.
+          </p>
+        </div>
+        <a 
+          href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20tengo%20una%20urgencia%20dental."
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="btn-secondary w-full sm:w-auto shrink-0 h-14 px-8 rounded-full bg-secondary text-ink font-rubik font-bold text-base flex items-center justify-center gap-2 shadow-sm transition active:scale-[0.98]"
+        >
+          Escríbenos ahora
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. EQUIPO Y RESPALDO SECTION (#equipo, fondo surface) -->
+  <section id="equipo" class="py-[72px] lg:py-[120px] bg-surface text-ink">
+    <div class="max-w-[1120px] mx-auto px-5">
+      
+      <!-- Section Header -->
+      <div class="max-w-2xl mb-10 md:mb-14">
+        <span class="font-rubik font-medium text-[13px] tracking-[0.08em] uppercase text-primary block mb-2">
+          QUIÉN TE ATIENDE
+        </span>
+        <h2 class="font-rubik font-bold text-[30px] md:text-[48px] leading-tight text-ink mb-3">
+          Especialistas con nombre y registro
+        </h2>
+        <p class="font-quicksand font-medium text-[16px] md:text-[17px] text-ink/85 leading-relaxed">
+          Profesionales certificados por la Superintendencia de Salud.
+        </p>
+      </div>
+
+      <!-- Tarjetas del equipo: Carrusel horizontal con scroll-snap en móvil, 4 columnas en escritorio -->
+      <div class="flex overflow-x-auto snap-x snap-mandatory pb-4 gap-5 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible -mx-5 px-5 md:mx-0 md:px-0">
+        
+        <!-- Profesional 1: Carlos Navarrete -->
+        <div class="snap-center shrink-0 w-[270px] md:w-auto bg-white rounded-[24px] p-6 border border-ink/10 shadow-sm flex flex-col items-center text-center">
+          <!-- Foto circular 112px con anillo exterior primary/30 separado 6px -->
+          <div class="w-28 h-28 rounded-full ring-1 ring-primary/30 ring-offset-[6px] bg-primary/15 overflow-hidden flex items-center justify-center mb-5 shrink-0">
+            <img 
+              src="https://ecossalud.cl/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2024-06-21-at-11.17.48-AM-e1718991554632-r68rbikce9zxjn85rp95uqkbzhxkkk6k4ihk6q2hs8.jpeg" 
+              alt="Dr. Carlos Navarrete, cirujano dentista de Ecos Salud" 
+              width="112" 
+              height="112" 
+              loading="lazy" 
+              decoding="async" 
+              class="w-full h-full object-cover"
+              onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-rubik font-bold text-2xl text-white\'>CN</span>'; this.parentElement.className='w-28 h-28 rounded-full ring-1 ring-primary/30 ring-offset-[6px] bg-primary flex items-center justify-center mb-5';"
+            >
+          </div>
+          <h3 class="font-rubik font-bold text-lg text-ink leading-snug mb-1">Carlos Navarrete</h3>
+          <p class="font-rubik font-medium text-sm text-primary mb-1">Cirujano dentista · Implantes</p>
+          <p class="font-quicksand font-medium text-xs text-ink/60">N° 413528</p>
+        </div>
+
+        <!-- Profesional 2: José Ignacio Flores -->
+        <div class="snap-center shrink-0 w-[270px] md:w-auto bg-white rounded-[24px] p-6 border border-ink/10 shadow-sm flex flex-col items-center text-center">
+          <div class="w-28 h-28 rounded-full ring-1 ring-primary/30 ring-offset-[6px] bg-primary/15 overflow-hidden flex items-center justify-center mb-5 shrink-0">
+            <img 
+              src="https://ecossalud.cl/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2024-06-21-at-11.16.24-AM-e1718992818210-r68rbikce9zxjn85rp95uqkbzhxkkk6k4ihk6q2hs8.jpeg" 
+              alt="Dr. José Ignacio Flores, ortodoncista de Ecos Salud" 
+              width="112" 
+              height="112" 
+              loading="lazy" 
+              decoding="async" 
+              class="w-full h-full object-cover"
+              onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-rubik font-bold text-2xl text-white\'>JF</span>'; this.parentElement.className='w-28 h-28 rounded-full ring-1 ring-primary/30 ring-offset-[6px] bg-primary flex items-center justify-center mb-5';"
+            >
+          </div>
+          <h3 class="font-rubik font-bold text-lg text-ink leading-snug mb-1">José Ignacio Flores</h3>
+          <p class="font-rubik font-medium text-sm text-primary mb-1">Ortodoncia</p>
+          <p class="font-quicksand font-medium text-xs text-ink/60">N° 819957</p>
+        </div>
+
+        <!-- Profesional 3: Ana Luisa Villagrán -->
+        <div class="snap-center shrink-0 w-[270px] md:w-auto bg-white rounded-[24px] p-6 border border-ink/10 shadow-sm flex flex-col items-center text-center">
+          <div class="w-28 h-28 rounded-full ring-1 ring-primary/30 ring-offset-[6px] bg-primary/15 overflow-hidden flex items-center justify-center mb-5 shrink-0">
+            <img 
+              src="https://ecossalud.cl/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2024-06-21-at-11.13.22-AM-e1718993036135-r68rbji6l417v96sm7nsf8bskvsxs9aagn51o013m0.jpeg" 
+              alt="Dra. Ana Luisa Villagrán, endodoncista de Ecos Salud" 
+              width="112" 
+              height="112" 
+              loading="lazy" 
+              decoding="async" 
+              class="w-full h-full object-cover"
+              onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-rubik font-bold text-2xl text-white\'>AV</span>'; this.parentElement.className='w-28 h-28 rounded-full ring-1 ring-primary/30 ring-offset-[6px] bg-primary flex items-center justify-center mb-5';"
+            >
+          </div>
+          <h3 class="font-rubik font-bold text-lg text-ink leading-snug mb-1">Ana Luisa Villagrán</h3>
+          <p class="font-rubik font-medium text-sm text-primary mb-1">Endodoncista</p>
+          <p class="font-quicksand font-medium text-xs text-ink/60">N° 606549</p>
+        </div>
+
+        <!-- Profesional 4: Carolina Mancilla (Monograma CM en Rubik 700 blanco sobre primary) -->
+        <div class="snap-center shrink-0 w-[270px] md:w-auto bg-white rounded-[24px] p-6 border border-ink/10 shadow-sm flex flex-col items-center text-center">
+          <div class="w-28 h-28 rounded-full ring-1 ring-primary/30 ring-offset-[6px] bg-primary flex items-center justify-center mb-5 shrink-0">
+            <span class="font-rubik font-bold text-2xl text-white tracking-wide">CM</span>
+          </div>
+          <h3 class="font-rubik font-bold text-lg text-ink leading-snug mb-1">Carolina Mancilla</h3>
+          <p class="font-rubik font-medium text-sm text-primary mb-1">Cirujano dentista</p>
+          <p class="font-quicksand font-medium text-xs text-ink/60">N° 818921</p>
+        </div>
+
+      </div>
+
+      <!-- Bloque de respaldo: Tarjeta blanca horizontal -->
+      <div class="mt-8 bg-white rounded-[24px] p-6 sm:p-8 border border-ink/10 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="flex flex-col sm:flex-row items-center text-center sm:text-left gap-5">
+          <img 
+            src="https://ecossalud.cl/wp-content/uploads/2025/05/seremi-de-salud-ecossalud.webp" 
+            alt="Autorización SEREMI de Salud" 
+            width="88" 
+            height="88" 
+            loading="lazy" 
+            decoding="async" 
+            class="h-[88px] w-auto object-contain shrink-0"
+            onerror="this.style.display='none'"
+          >
+          <div>
+            <h3 class="font-rubik font-bold text-lg sm:text-xl text-ink leading-tight">
+              Autorizados por la SEREMI de Salud
+            </h3>
+            <p class="font-quicksand font-medium text-[13px] text-ink/70 mt-1">
+              Resoluciones 2313526087 · 2313526063 · 2413233420 · 05426
+            </p>
+          </div>
+        </div>
+
+        <!-- 2 Chips de facilidades -->
+        <div class="flex flex-wrap items-center justify-center gap-2.5">
+          <span class="px-4 py-2 rounded-full border border-primary/30 bg-primary/5 font-rubik font-medium text-xs text-primary">
+            Pago en cuotas
+          </span>
+          <span class="px-4 py-2 rounded-full border border-primary/30 bg-primary/5 font-rubik font-medium text-xs text-primary">
+            Trabajamos con seguros complementarios
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. RESEÑAS SECTION (#resenas, fondo blanco con corte de ondas a la derecha) -->
+  <section id="resenas" class="relative py-[72px] lg:py-[120px] bg-white text-ink overflow-hidden">
+    
+    <!-- Corte decorativo de ondas: medio set de anillos grandes (400px) en primary al 8% recortado en el borde derecho -->
+    <div class="absolute -right-48 top-1/2 -translate-y-1/2 w-[400px] h-[400px] pointer-events-none" aria-hidden="true">
+      <svg class="w-full h-full" viewBox="0 0 400 400" fill="none">
+        <circle cx="200" cy="200" r="100" stroke="#209DE7" stroke-width="1.5" stroke-opacity="0.08" />
+        <circle cx="200" cy="200" r="150" stroke="#209DE7" stroke-width="1.5" stroke-opacity="0.08" />
+        <circle cx="200" cy="200" r="195" stroke="#209DE7" stroke-width="1.5" stroke-opacity="0.08" />
+      </svg>
+    </div>
+
+    <div class="relative z-10 max-w-[1120px] mx-auto px-5">
+      
+      <!-- Cabecera de reseñas -->
+      <div class="flex flex-col md:flex-row md:items-end gap-4 md:gap-8 mb-12">
+        <div class="font-rubik font-extrabold text-[96px] md:text-[140px] leading-none text-primary tracking-tight">
+          4,9
+        </div>
+        <div class="pb-2 md:pb-6">
+          <div class="flex items-center gap-1 text-primary mb-2" aria-hidden="true">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="font-rubik font-medium text-lg text-ink">165 reseñas en Google</p>
+        </div>
+      </div>
+
+      <!-- Tarjetas de Reseñas: Carrusel en móvil, 3 columnas en escritorio -->
+      <div class="flex overflow-x-auto snap-x snap-mandatory pb-4 gap-6 lg:grid lg:grid-cols-3 lg:items-start lg:overflow-visible -mx-5 px-5 lg:mx-0 lg:px-0">
+        
+        <!-- Reseña 1 -->
+        <article class="snap-center shrink-0 w-[300px] sm:w-[340px] lg:w-auto bg-white rounded-[24px] p-8 border border-ink/10 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="font-rubik font-bold text-5xl text-primary/20 leading-none block select-none -mb-2">“</span>
+            <p class="font-quicksand font-medium text-[16px] text-ink/85 leading-relaxed mb-6">
+              «Me han atendido maravilloso! Son todos muy amables y atentos! Sumado a que la sucursal es céntrica y los valores son accesibles, lo cual agradezco mucho!»
+            </p>
+          </div>
+          <footer class="pt-4 border-t border-ink/10">
+            <cite class="font-rubik font-bold text-sm text-ink not-italic block">Iris Marileo Henríquez</cite>
+          </footer>
+        </article>
+
+        <!-- Reseña 2 -->
+        <article class="snap-center shrink-0 w-[300px] sm:w-[340px] lg:w-auto bg-white rounded-[24px] p-8 border border-ink/10 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="font-rubik font-bold text-5xl text-primary/20 leading-none block select-none -mb-2">“</span>
+            <p class="font-quicksand font-medium text-[16px] text-ink/85 leading-relaxed mb-6">
+              «He tenido una buena experiencia atendiéndome en el lugar y en mi proceso de ortodoncia. La doctora Carolina Mancilla ha sido muy profesional, detallista, preocupada y muy dedicada a obtener un buen resultado.»
+            </p>
+          </div>
+          <footer class="pt-4 border-t border-ink/10">
+            <cite class="font-rubik font-bold text-sm text-ink not-italic block">Muriel Maureira Zanni</cite>
+          </footer>
+        </article>
+
+        <!-- Reseña 3 -->
+        <article class="snap-center shrink-0 w-[300px] sm:w-[340px] lg:w-auto bg-white rounded-[24px] p-8 border border-ink/10 shadow-sm flex flex-col justify-between">
+          <div>
+            <span class="font-rubik font-bold text-5xl text-primary/20 leading-none block select-none -mb-2">“</span>
+            <p class="font-quicksand font-medium text-[16px] text-ink/85 leading-relaxed mb-6">
+              «El ortodoncista también es excelente. Además de ser muy profesional, explica todo con claridad, transmite confianza y hace que el tratamiento sea mucho más llevadero.»
+            </p>
+          </div>
+          <footer class="pt-4 border-t border-ink/10">
+            <cite class="font-rubik font-bold text-sm text-ink not-italic block">Michell Delgado</cite>
+          </footer>
+        </article>
+
+      </div>
+
+      <!-- Enlace final a Google Maps -->
+      <div class="mt-10 text-left">
+        <a 
+          href="https://maps.app.goo.gl/QLQavoorHUT8AJGY6" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="inline-flex items-center gap-2 font-rubik font-bold text-base text-primary hover:text-primary/80 transition-colors"
+        >
+          <span>Ver todas las reseñas en Google</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. AGENDA Y CONTACTO SECTION (#agenda, fondo primary con corte de ondas a la izquierda) -->
+  <section id="agenda" class="relative py-[72px] lg:py-[120px] bg-primary text-white overflow-hidden">
+    
+    <!-- Corte decorativo de ondas: medio set de anillos grandes (400px) en blanco/10 recortado en el borde izquierdo -->
+    <div class="absolute -left-48 top-1/2 -translate-y-1/2 w-[400px] h-[400px] pointer-events-none" aria-hidden="true">
+      <svg class="w-full h-full" viewBox="0 0 400 400" fill="none">
+        <circle cx="200" cy="200" r="100" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.10" />
+        <circle cx="200" cy="200" r="150" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.10" />
+        <circle cx="200" cy="200" r="195" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.10" />
+      </svg>
+    </div>
+
+    <div class="relative z-10 max-w-[1120px] mx-auto px-5">
+      
+      <!-- Cabecera -->
+      <div class="max-w-2xl mb-12">
+        <h2 class="font-rubik font-bold text-[30px] md:text-[48px] leading-tight text-white mb-3">
+          Tu evaluación es gratis. Agenda en un mensaje.
+        </h2>
+        <p class="font-quicksand font-semibold text-[17px] md:text-[18px] text-white leading-relaxed">
+          Completa tus datos y te abrimos WhatsApp con todo listo para enviar.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+        
+        <!-- Formulario en tarjeta blanca (60% en escritorio) -->
+        <div class="lg:col-span-7 bg-white rounded-[24px] p-6 sm:p-8 text-ink shadow-sm border border-ink/10">
+          <form id="agenda-form" onsubmit="handleAgendaSubmit(event)" novalidate>
+            
+            <!-- Campo 1: Nombre (Obligatorio) -->
+            <div class="mb-5">
+              <label for="form-nombre" class="block font-rubik font-bold text-sm text-ink mb-2">
+                Nombre y apellido <span class="text-primary" aria-hidden="true">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="form-nombre" 
+                name="nombre" 
+                required 
+                placeholder="Ej. Constanza Silva" 
+                class="w-full h-[52px] px-4 rounded-[14px] border border-ink/20 font-quicksand font-medium text-base text-ink placeholder:text-ink/40 focus:border-primary transition-colors"
+              >
+              <p id="nombre-error" class="hidden font-quicksand font-medium text-xs text-primary mt-1.5">
+                Por favor, ingresa tu nombre para agendar.
+              </p>
+            </div>
+
+            <!-- Campo 2: Tratamiento de interés -->
+            <div class="mb-5">
+              <label for="form-tratamiento" class="block font-rubik font-bold text-sm text-ink mb-2">
+                Tratamiento de interés
+              </label>
+              <div class="relative">
+                <select 
+                  id="form-tratamiento" 
+                  name="tratamiento"
+                  class="w-full h-[52px] px-4 rounded-[14px] border border-ink/20 font-quicksand font-medium text-base text-ink bg-white appearance-none focus:border-primary transition-colors"
+                >
+                  <option value="No sé, quiero una evaluación">No sé, quiero una evaluación</option>
+                  
+                  <optgroup label="Tratamientos Dentales">
+                    <option value="Extracciones dentales y muelas del juicio">Extracciones dentales y muelas del juicio</option>
+                    <option value="Prótesis removibles">Prótesis removibles</option>
+                    <option value="Implantes dentales">Implantes dentales</option>
+                    <option value="Endodoncia">Endodoncia</option>
+                    <option value="Ortodoncia y brackets">Ortodoncia y brackets</option>
+                    <option value="Gingivectomía">Gingivectomía</option>
+                    <option value="Diseño de sonrisa">Diseño de sonrisa</option>
+                    <option value="Radiografía panorámica">Radiografía panorámica</option>
+                    <option value="Odontopediatría">Odontopediatría</option>
+                    <option value="Limpieza dental y destartraje">Limpieza dental y destartraje</option>
+                    <option value="Blanqueamiento dental">Blanqueamiento dental</option>
+                    <option value="Urgencias dentales">Urgencias dentales</option>
+                  </optgroup>
+
+                  <optgroup label="Tratamientos Estéticos">
+                    <option value="Toxina botulínica">Toxina botulínica</option>
+                    <option value="Ácido hialurónico">Ácido hialurónico</option>
+                    <option value="Depilación láser">Depilación láser</option>
+                    <option value="Limpieza facial">Limpieza facial</option>
+                    <option value="Dermapen">Dermapen</option>
+                    <option value="Pink Glow">Pink Glow</option>
+                  </optgroup>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-ink">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Campo 3: Horario preferido (Botones de opción Mañana / Tarde / Sábado) -->
+            <div class="mb-5">
+              <span class="block font-rubik font-bold text-sm text-ink mb-2">
+                Horario preferido
+              </span>
+              <div class="grid grid-cols-3 gap-2 sm:gap-3" role="radiogroup" aria-label="Horario preferido">
+                
+                <label class="cursor-pointer">
+                  <input type="radio" name="horario" value="Mañana" checked class="peer sr-only">
+                  <div class="schedule-pill peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary h-12 rounded-[14px] border border-ink/20 flex items-center justify-center font-rubik font-bold text-xs sm:text-sm text-ink transition-colors">
+                    Mañana
+                  </div>
+                </label>
+
+                <label class="cursor-pointer">
+                  <input type="radio" name="horario" value="Tarde" class="peer sr-only">
+                  <div class="schedule-pill peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary h-12 rounded-[14px] border border-ink/20 flex items-center justify-center font-rubik font-bold text-xs sm:text-sm text-ink transition-colors">
+                    Tarde
+                  </div>
+                </label>
+
+                <label class="cursor-pointer">
+                  <input type="radio" name="horario" value="Sábado" class="peer sr-only">
+                  <div class="schedule-pill peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary h-12 rounded-[14px] border border-ink/20 flex items-center justify-center font-rubik font-bold text-xs sm:text-sm text-ink transition-colors">
+                    Sábado
+                  </div>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- Campo 4: Comentario (Opcional) -->
+            <div class="mb-6">
+              <label for="form-comentario" class="block font-rubik font-bold text-sm text-ink mb-2">
+                Comentario <span class="font-quicksand font-normal text-xs text-ink/60">(opcional)</span>
+              </label>
+              <textarea 
+                id="form-comentario" 
+                name="comentario" 
+                rows="3" 
+                placeholder="¿Tienes alguna molestia puntual o consulta?"
+                class="w-full p-4 rounded-[14px] border border-ink/20 font-quicksand font-medium text-base text-ink placeholder:text-ink/40 focus:border-primary transition-colors resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Botón verde a todo el ancho -->
+            <button 
+              type="submit" 
+              class="btn-secondary w-full h-14 rounded-full bg-secondary text-ink font-rubik font-bold text-base flex items-center justify-center gap-2 shadow-sm transition active:scale-[0.99]"
+            >
+              <svg class="w-5 h-5 fill-current text-ink" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Enviar por WhatsApp</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Datos de contacto (blanco) -->
+        <div class="lg:col-span-5 text-white space-y-6">
+          
+          <!-- Dirección -->
+          <div>
+            <h3 class="font-rubik font-bold text-xl text-white mb-1">Dirección</h3>
+            <p class="font-quicksand font-semibold text-base text-white/95">
+              Moneda 812, Oficina 805, Santiago
+            </p>
+            <a 
+              href="https://maps.app.goo.gl/QLQavoorHUT8AJGY6" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-block mt-1 font-rubik font-bold text-sm text-white underline underline-offset-4 hover:text-white/80 transition-colors"
+            >
+              Cómo llegar →
+            </a>
+          </div>
+
+          <!-- Horario -->
+          <div>
+            <h3 class="font-rubik font-bold text-xl text-white mb-1">Horario de atención</h3>
+            <p class="font-quicksand font-semibold text-base text-white/95 leading-relaxed">
+              Lunes a viernes de 08:00 a 20:00<br>
+              Sábado de 09:00 a 18:00
+            </p>
+          </div>
+
+          <!-- Teléfono -->
+          <div>
+            <h3 class="font-rubik font-bold text-xl text-white mb-1">Teléfono</h3>
+            <a 
+              href="tel:+56232862182" 
+              class="font-quicksand font-semibold text-base text-white hover:underline transition-all"
+            >
+              +56 2 3286 2182
+            </a>
+          </div>
+
+          <!-- Correo -->
+          <div>
+            <h3 class="font-rubik font-bold text-xl text-white mb-1">Correo electrónico</h3>
+            <a 
+              href="mailto:contacto@ecossalud.cl" 
+              class="font-quicksand font-semibold text-base text-white hover:underline transition-all"
+            >
+              contacto@ecossalud.cl
+            </a>
+          </div>
+
+          <!-- Redes Sociales -->
+          <div class="pt-2">
+            <h3 class="font-rubik font-bold text-xl text-white mb-3">Redes sociales</h3>
+            <div class="flex items-center gap-4">
+              <!-- Instagram -->
+              <a 
+                href="https://www.instagram.com/ecossalud.cl/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Instagram de Ecos Salud"
+                class="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 active:scale-95 transition"
+              >
+                <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+
+              <!-- TikTok -->
+              <a 
+                href="https://www.tiktok.com/@ecos.salud" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="TikTok de Ecos Salud"
+                class="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 active:scale-95 transition"
+              >
+                <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER (Fondo blanco) -->
+  <footer class="bg-white border-t border-ink/10 py-10 text-ink">
+    <div class="max-w-[1120px] mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- Logo + Dirección -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+        <a href="#inicio" aria-label="Ecos Salud - Inicio">
+          <img 
+            src="https://ecossalud.cl/wp-content/uploads/2025/05/ecossalud-logo-seo.webp" 
+            alt="Ecos Salud" 
+            width="150" 
+            height="40" 
+            loading="lazy" 
+            decoding="async"
+            class="h-9 w-auto object-contain"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-rubik font-bold text-xl text-primary\'>Ecos Salud</span>';"
+          >
+        </a>
+        <span class="hidden sm:inline text-ink/20">|</span>
+        <span class="font-quicksand font-medium text-sm text-ink/75">
+          Moneda 812, Oficina 805, Santiago
+        </span>
+      </div>
+
+      <!-- Webpay link -->
+      <div>
+        <a 
+          href="https://www.webpay.cl/form-pay/233507" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="font-rubik font-bold text-sm text-primary hover:underline flex items-center gap-1.5"
+        >
+          <span>Pagar online con Webpay</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <!-- Copyright dinámico -->
+      <div class="font-quicksand font-medium text-xs text-ink/60">
+        © Ecos Salud <span id="current-year">2026</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP (Fijo abajo a la derecha, 16px margen) -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <a 
+      href="https://wa.me/56946368895?text=Hola%20Ecos%20Salud%2C%20quiero%20agendar%20mi%20evaluaci%C3%B3n%20gratis."
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label="Agendar evaluación gratis por WhatsApp"
+      class="btn-secondary h-14 px-5 rounded-full bg-secondary text-ink font-rubik font-bold text-sm shadow-md flex items-center gap-2.5 transition active:scale-95 max-[359px]:w-14 max-[359px]:px-0 max-[359px]:justify-center"
+    >
+      <!-- WhatsApp SVG inline -->
+      <svg class="w-6 h-6 fill-current shrink-0 text-ink" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span class="max-[359px]:hidden">Evaluación gratis</span>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT VANILLA (<6KB, al final del body) -->
+  <script>
+    (function() {
+      // 1. Dinamic Year
+      var yearElem = document.getElementById('current-year');
+      if (yearElem) {
+        yearElem.textContent = new Date().getFullYear();
+      }
+
+      // 2. Hero Word-by-word entry animation
+      var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var words = document.querySelectorAll('.hero-word');
+      var wavesContainer = document.getElementById('eco-button-waves');
+
+      if (!prefersReducedMotion && words.length > 0) {
+        words.forEach(function(word, idx) {
+          setTimeout(function() {
+            word.classList.add('is-visible');
+          }, idx * 90);
+        });
+
+        // Trigger waves animation after title finishes (~400ms after last word)
+        var totalTitleTime = (words.length * 90) + 400;
+        setTimeout(function() {
+          if (wavesContainer) {
+            wavesContainer.classList.add('eco-pulse-active');
+            // After 3 cycles (1.4s * 3 = 4.2s), settle rings at 10% opacity
+            setTimeout(function() {
+              wavesContainer.classList.remove('eco-pulse-active');
+              wavesContainer.classList.add('eco-pulse-settled');
+            }, 4300);
+          }
+        }, totalTitleTime);
+      } else {
+        // Fallback for reduced motion
+        words.forEach(function(w) { w.classList.add('is-visible'); });
+        if (wavesContainer) {
+          wavesContainer.classList.add('eco-pulse-settled');
+        }
+      }
+
+      // 3. Subtle fade-in on scroll
+      if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+        var sections = document.querySelectorAll('section, footer');
+        sections.forEach(function(sec) {
+          if (sec.id !== 'inicio') {
+            sec.classList.add('fade-on-scroll');
+          }
+        });
+
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('has-entered');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        sections.forEach(function(sec) {
+          if (sec.id !== 'inicio') {
+            observer.observe(sec);
+          }
+        });
+      }
+    })();
+
+    // 4. Tab switcher for treatments (Dental / Estética)
+    function switchTreatmentTab(tab) {
+      var dentalBtn = document.getElementById('tab-btn-dental');
+      var esteticaBtn = document.getElementById('tab-btn-estetica');
+      var dentalPanel = document.getElementById('tab-panel-dental');
+      var esteticaPanel = document.getElementById('tab-panel-estetica');
+
+      if (tab === 'dental') {
+        dentalBtn.setAttribute('aria-selected', 'true');
+        dentalBtn.setAttribute('tabindex', '0');
+        dentalBtn.className = 'tab-trigger px-6 py-2.5 rounded-full font-rubik font-bold text-sm transition-all duration-200 bg-primary text-white shadow-sm';
+        
+        esteticaBtn.setAttribute('aria-selected', 'false');
+        esteticaBtn.setAttribute('tabindex', '-1');
+        esteticaBtn.className = 'tab-trigger px-6 py-2.5 rounded-full font-rubik font-bold text-sm transition-all duration-200 text-ink hover:text-primary';
+
+        dentalPanel.classList.remove('hidden');
+        esteticaPanel.classList.add('hidden');
+      } else {
+        esteticaBtn.setAttribute('aria-selected', 'true');
+        esteticaBtn.setAttribute('tabindex', '0');
+        esteticaBtn.className = 'tab-trigger px-6 py-2.5 rounded-full font-rubik font-bold text-sm transition-all duration-200 bg-primary text-white shadow-sm';
+        
+        dentalBtn.setAttribute('aria-selected', 'false');
+        dentalBtn.setAttribute('tabindex', '-1');
+        dentalBtn.className = 'tab-trigger px-6 py-2.5 rounded-full font-rubik font-bold text-sm transition-all duration-200 text-ink hover:text-primary';
+
+        esteticaPanel.classList.remove('hidden');
+        dentalPanel.classList.add('hidden');
+      }
+    }
+
+    // 5. Mobile Toggle for 12 treatments
+    var dentalExpanded = false;
+    function toggleMobileDentalTreatments() {
+      var extra = document.getElementById('extra-dental-rows');
+      var btn = document.getElementById('toggle-dental-btn');
+      dentalExpanded = !dentalExpanded;
+
+      if (dentalExpanded) {
+        extra.classList.remove('hidden');
+        btn.textContent = 'Ver menos';
+      } else {
+        extra.classList.add('hidden');
+        btn.textContent = 'Ver los 12 tratamientos';
+      }
+    }
+
+    // 6. Agenda form handler
+    function handleAgendaSubmit(e) {
+      e.preventDefault();
+      var form = e.target;
+      var nombreInput = document.getElementById('form-nombre');
+      var errorMsg = document.getElementById('nombre-error');
+      var nombre = nombreInput.value.trim();
+
+      if (!nombre) {
+        errorMsg.classList.remove('hidden');
+        nombreInput.focus();
+        return;
+      } else {
+        errorMsg.classList.add('hidden');
+      }
+
+      var tratamiento = document.getElementById('form-tratamiento').value;
+      var horarioRadio = form.querySelector('input[name="horario"]:checked');
+      var horario = horarioRadio ? horarioRadio.value : 'Mañana';
+      var comentario = document.getElementById('form-comentario').value.trim();
+
+      // Form message: «Hola Ecos Salud, soy [nombre]. Quiero agendar mi evaluación gratis. Tratamiento: [tratamiento]. Horario preferido: [horario]. [comentario si existe]»
+      var text = 'Hola Ecos Salud, soy ' + nombre + '. Quiero agendar mi evaluación gratis. Tratamiento: ' + tratamiento + '. Horario preferido: ' + horario + '.';
+      if (comentario) {
+        text += ' ' + comentario;
+      }
+
+      var whatsappUrl = 'https://wa.me/56946368895?text=' + encodeURIComponent(text);
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    }
+
+    // Fallback no-op for radio style compatibility
+    function updateRadioStyles() {}
+  </script>
+</body>
+</html>

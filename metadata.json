@@ -1,0 +1,6 @@
+{
+  "name": "Ecos Salud",
+  "description": "Rediseño web de Ecos Salud - Clínica dental y estética en Santiago de Chile. Evaluación gratis y agenda por WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
